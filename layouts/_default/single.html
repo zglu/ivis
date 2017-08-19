@@ -1,0 +1,12 @@
+{{ partial "header" . }}
+<article{{if .Params.article_class}} class="{{.Params.article_class}}"{{end}}>
+<header class="hr">
+{{ if .Title -}}
+<h1 class="entry-title">{{ .Title }}</h1>
+{{- end }}
+</header>
+<section class="content{{if .Params.content_class}} {{.Params.content_class}}{{end}}">
+{{ .Content }}
+</section>
+</article>
+{{ partial "footer" . }}

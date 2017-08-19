@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<title>{{- if not .IsHome -}}{{ .Title }} | {{- end -}}&nbsp;{{ .Site.Title }}</title>
+<link rel="canonical" href="{{ .Permalink }}">
+<link href="/images/favicon.png" rel="icon"/>
+{{- partial "head_includes.html" . -}}
+</head>
+
+<body>
+<header>
+<nav>
+  <a href="/"><img src="/images/logo.png"/ height="40px;"></a>
+  <ul>
+    <li><a href="/" style="color: blue">Home</a></li>
+    <li><a href="/examples" style="color: blue">Examples</a></li>
+    <li><a href="/dot">Dot</a></li>
+    <li><a href="/2dscatter">2D-Scatter</a></li>
+    <li><a href="/bar">Bar/Column</a></li>
+    <li><a href="/line">Line</a></li>
+    <li><a href="/pie">Pie</a></li>
+    <li><a href="/heatmap">Heatmap</a></li>
+  </ul>
+</nav>
+</header>

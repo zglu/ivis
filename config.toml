@@ -1,0 +1,5 @@
+baseurl = "/"
+title = "IVIS"
+author = "Zhigang Lu"
+canonifyurls = true
+disablePathToLower = true
