@@ -1,4 +1,4 @@
-![IVIS](/images/favicon-large.png)
+![IVIS](ivis/static/images/favicon-large.png)
 
 ## About
 
@@ -12,8 +12,6 @@
 - <strong>Line</strong> chart: multiple series can be plotted
 - <strong>Pie</strong> chart: in 2D or 3D
 - <strong>Heatmap</strong> fast overview of many data points
-
-![ivisGallery](/images/ivisGallery.jpg)
 
 ## Interactive visualisation
 
@@ -34,7 +32,7 @@
 Exemplary charts and sample data input are availabe for users to start with.
 
 <center><figure>
-<img src="/images/ivisGallery.jpg" width="85%" />
+<img src="ivis/static/images/ivisGallery.jpg" width="85%" />
 </figure></center>
 
 ## Credits
