@@ -1,4 +1,4 @@
-![IVIS](ivis/static/images/favicon-large.png)
+![IVIS](https://raw.githubusercontent.com/zglu/ivis/master/static/images/favicon-large.png)
 
 ## About
 
@@ -32,7 +32,7 @@
 Exemplary charts and sample data input are availabe for users to start with.
 
 <center><figure>
-<img src="ivis/static/images/ivisGallery.jpg" width="85%" />
+<img src="https://raw.githubusercontent.com/zglu/ivis/master/static/images/ivisGallery.jpg" width="95%" />
 </figure></center>
 
 ## Credits
