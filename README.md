@@ -36,6 +36,21 @@ Exemplary charts and sample data input are availabe for users to start with.
 <img src="https://raw.githubusercontent.com/zglu/ivis/master/static/images/ivisGallery.jpg" width="95%" />
 </figure></center>
 
+## Run IVIS locally
+
+One way to run IVIS locally is to save the webpage to a local machine and open with your web browser.
+
+Another way is to clone or download this repo, and run with [Hugo](https://gohugo.io) server:
+
+~~~~~~
+## install Hugo
+brew install hugo
+
+## run Hugo in this directory
+hugo server
+~~~~~~
+
+
 ## Credits
 
 - [Highcharts](https://highcharts.com)
