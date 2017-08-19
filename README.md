@@ -1,4 +1,5 @@
-![IVIS](https://raw.githubusercontent.com/zglu/ivis/master/static/images/favicon-large.png)
+
+<img src="https://raw.githubusercontent.com/zglu/ivis/master/static/images/ivislogo.png" width="40%"/>
 
 ## About
 
