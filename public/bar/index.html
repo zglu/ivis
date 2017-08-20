@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<title>Interactive Bar / Column Chart |&nbsp;IVIS</title>
+<link rel="canonical" href="/bar/">
+<link href="/images/favicon.png" rel="icon"/>
+<link rel="stylesheet" href="/css/style.css"/>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="/js/highcharts.js"></script>
+<script src="/js/hc-ggplot2.js"></script>
+<script src="/js/hc-data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+</head>
+
+<body>
+<header>
+<nav>
+  <a href="/"><img src="/images/logo.png"/ height="40px;"></a>
+  <ul>
+    <li><a href="/" style="color: blue">Home</a></li>
+    <li><a href="/examples" style="color: blue">Examples</a></li>
+    <li><a href="/dot">Dot</a></li>
+    <li><a href="/2dscatter">2D-Scatter</a></li>
+    <li><a href="/bar">Bar/Column</a></li>
+    <li><a href="/line">Line</a></li>
+    <li><a href="/pie">Pie</a></li>
+    <li><a href="/heatmap">Heatmap</a></li>
+  </ul>
+</nav>
+</header>
+
+<article>
+<header class="hr">
+<h1 class="entry-title">Interactive Bar / Column Chart</h1>
+</header>
+<section class="content">
+<div>
+<p>You can use <strong>single</strong> comma-, tab-, or space-separated values as input. Be sure to include a header in your data.</p>
+
+<span class="csv-toggle"><em><mark>+</mark> Sample data for bar/column chart</em></span>
+<span class="csv-example" style="width: 100%">
+<pre>
+Region,1800,1900,1999,2050
+World,978,1650,6008,9725
+Asia,635,947,3700,5267
+Africa,107,133,783,2478
+Europe,203,408,675,734
+Latin,16,38,167,603
+North,2,26,172,351
+Oceania,2,6,30,57
+</pre></span>
+<script>
+function main() {
+  $('.csv-example').hide();
+  $('.csv-toggle').on('click', function() {
+    $(this).toggleClass('active');
+    $(this).next().slideToggle(400);
+  });
+}
+$(document).ready(main);
+</script>
+
+<hr style="border: 1px dashed #008800">
+<h2>Make an Interactive (Grouped) Bar/Column Chart</h2>
+
+<form>
+<p>1. Set details for your chart (all optional):<br>
+<input type="text" name="mtitle">&nbsp;&nbsp;<strong>Chart Title</strong> (default: "Bar/Column Chart"):<br> 
+<input type="text" name="yaxis">&nbsp;&nbsp;<strong>Name of y-axis</strong> (default: "Value")<br> 
+<strong>Switch Rows and Columns?</strong> <input type="checkbox" id="switchrc" style="height: 1.2em;">
+</p>
+<p>2. Please paste your data (with header) below:<br>
+<textarea rows="10" cols="60" name="usrcsv"></textarea>
+</p>
+<p>3. Select a chart type
+<select id="bar-col">
+    <option value="bar">Bar</option>
+    <option value="column" selected="selected">Column</option>
+</select></p>
+</form>
+<p><button id="makeChart">Make Chart</button></p>
+<br>
+
+<div id="container" style="width: 90%; margin: 0 auto"></div>
+<script>
+$(function () {
+  $('#makeChart').click(function(){
+    if ($('textarea[name=usrcsv]').val() == "") {
+    alert("You need to enter the data!")
+    } else {
+    var usrinput = $('textarea[name=usrcsv]').val();
+    var usrcsv = usrinput.replace(/[ \t]+/g, ",");
+    };
+    if ($('input[name=mtitle]').val() == "") {
+    var mtitle = 'Bar/Column Chart'
+    } else {
+    var mtitle = $('input[name=mtitle]').val();
+    };
+    if ($('input[name=yaxis]').val() == "") {
+    var ytitle = 'Value'
+    } else {
+    var ytitle = $('input[name=yaxis]').val();
+    };
+    if ($("#switchrc").is(":checked")) {
+    var rcSwitch = true;
+       } else {
+    var rcSwitch = false;
+       };
+    var ctype = $('#bar-col').val();
+    Highcharts.chart('container', {
+     chart: {
+         type: ctype,
+         zoomType: 'xy',
+         style: {
+            fontFamily: 'Arial'
+        }
+       },
+    yAxis:{
+        title: {
+        text: ytitle
+    },
+        labels: {
+            format: '{value}'
+        },
+       },
+    data: {
+         csv: usrcsv,
+     switchRowsAndColumns: rcSwitch
+    },
+    title: {
+         text: mtitle
+    },
+    legend: {
+        enabled: true
+    },
+    credits: {
+        enabled: false
+    },
+    tooltip: {
+         formatter: function () {
+            return this.series.name + '<br/>' + '<strong>' + Highcharts.numberFormat(this.y,2) + '</strong>';
+         }
+    }
+    });
+  });
+});
+</script>
+
+</div>
+
+</section>
+</article>
+<footer>
+<hr style="border-style: dashed; color: #ddd;">
+<p style="font-size: 0.8em;">&copy; 2017 ivis.xyz&nbsp;-&nbsp;<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>&nbsp;-&nbsp;<a href="/contact">Contact</a>&nbsp;-&nbsp;<a href="#">🔝</a></p>
+</footer>
+</body>
+</html>
+
