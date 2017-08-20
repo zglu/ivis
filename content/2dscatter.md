@@ -6,8 +6,6 @@ title = "Interactive 2D Scatter Chart"
 
 <p>An extra feature provided here is that you can link any data point to an external resource, for instance to link the gene in the volcano plot to databases containing information about that gene (for instance <a href="http://www.genedb.org/Homepage" target="_blank">GeneDB</a> or <a href="http://parasite.wormbase.org/index.html" target="_blank">WormBase Parasite</a>, or any other website for your gene id), which saves you a lot of typing effort.</p> 
 
-<p>To start, set the attributes of your chart (all optional), configure the links for your data points, paste your csv data, and make the chart! Note that you can input thousands (even millions) of points, but you cannot download the chart if your data points are more than 1000, yet you can print it.</p> 
-
 <p>The input data should have three columns (Name, X, Y) separated by <strong>single</strong> comma, tab, or space.</p>
 
 <span class="csv-toggle"><em><mark>+</mark> Sample data for 2D scatter plot</em></span>

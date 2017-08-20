@@ -3,7 +3,6 @@ title = "Interactive 3D Scatter Chart"
 +++
 <div>
 <script src="https://code.highcharts.com/highcharts-3d.js"></script>
-<p>Note that you cannot download the chart if your data points are more than 1000, yet you can print it.</p> 
 
 <p>The input data should have four columns (Name, X, Y, Z) separated by <strong>single</strong> comma, tab, or space.</p>
 
