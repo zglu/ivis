@@ -235,7 +235,7 @@ $(function () {
 });
 </script>
 
-<h2>3D Scatter</h2>
+<h2>3D Scatter (under development)</h2>
 <div id="3dpca" style="width: 85%; margin: 0 auto"></div>
 <script>
 $(function () {
