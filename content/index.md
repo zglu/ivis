@@ -63,5 +63,5 @@ https://www.ncbi.nlm.nih.gov/cdd/?term=
 ## Find it useful?
 
 <p>If you find that IVIS can faciliate your data analysis and visualisation, please cite:<br>
-<span style="width:100%; word-wrap:break-word; font-size: 0.8em; font-family: Courier">Lu Z & Zhang Y (manuscript in preparation) Facilitated analysis of large data sets by interactive visualisation. https://github.com/zglu/ivis</span>
+<span style="width:100%; word-wrap:break-word; font-size: 0.8em; font-family: Courier">Lu Z, Zhang Y (2017) Facilitated analysis of large data sets by interactive visualisation. <em>bioRxiv</em> 178616; doi: https://doi.org/10.1101/178616</span>
 </p>
