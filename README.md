@@ -58,6 +58,14 @@ hugo server
 - [Hugo](https://gohugo.io)
 - [Hugo NewsPrint theme](https://themes.gohugo.io/newsprint/)
 
+## Plans
+
+- add 3D scatter chart
+- improve the input for heatmap
+- export for html slides
+
 ## License
 
 IVIS is released under the CC-BY-NC 4.0 license.
+
+
