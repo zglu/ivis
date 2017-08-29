@@ -20,7 +20,7 @@ $(function () {
     },
 
     xAxis: {
-        categories: ['Egg', 'Miracidium', 'Sporocyst', 'Cercaria', 'Schistosomula' ,'Adult']
+        categories: ['Egg', 'Miracidium', 'Sporocyst', 'Cercaria', 'Schistosomulum' ,'Adult']
     },
 
     legend: {
