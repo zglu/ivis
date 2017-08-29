@@ -3,7 +3,7 @@ title = "Interactive Pie Chart"
 +++
 <div>
 <script src="https://code.highcharts.com/highcharts-3d.js"></script>
-<p>You can use <strong>single</strong>comma-, tab-, or space-separated values as input. Be sure to include a header in your data. If you have percentage values, be sure to convert them into float numbers first. The chart will calculate and display the proportion (in %) of each part.</p>
+<p>You can use <strong>single</strong> comma-, tab-, or space-separated values as input. Be sure to include a header in your data. If you have percentage values, be sure to convert them into float numbers first. The chart will calculate and display the proportion (in %) of each part.</p>
 <span class="csv-toggle"><em><mark>+</mark> Sample data for pie plot</em></span>
 <span class="csv-example" style="width: 100%">
 <pre>
