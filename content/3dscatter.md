@@ -41,7 +41,7 @@ $(document).ready(main);
 <input type="text" name="xaxis">&nbsp;&nbsp;<strong>Name of x-axis</strong> (default: "X")<br>
 <input type="text" name="yaxis">&nbsp;&nbsp;<strong>Name of y-axis</strong> (default: "Y")<br> 
 <input type="text" name="zaxis">&nbsp;&nbsp;<strong>Name of z-axis</strong> (default: "Z")<br> 
-<input type="text" name="pcolor">&nbsp;&nbsp;<strong>Point color</strong> (default: "#333")<br> 
+<input type="text" name="pcolor">&nbsp;&nbsp;<strong>Point color</strong> (default: color by point)<br> 
 <input type="text" name="preurl" placeholder="e.g., https://google.com/">&nbsp;&nbsp;<strong>Point link prefix</strong> (default to <a href="https://scholar.google.com">Google Scholar</a>)<br>
 <strong>Show data labels?</strong> (point names) <input type="checkbox" id="select-datalebels" style="height: 1.2em;">
 </p>

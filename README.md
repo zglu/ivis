@@ -60,8 +60,7 @@ hugo server
 
 ## Plans
 
-- add 3D scatter chart
-- improve the input for heatmap
+- add 3D scatter chart (DONE)
 - export for html slides
 
 ## License

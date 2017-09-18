@@ -12,9 +12,11 @@ $(function () {
 	var mtitle = $('input[name=mtitle]').val();
 	};
     if ($('input[name=pcolor]').val() == "") {
-	var pcolor = '#333'
+	var pcolor = '';
+	var cByPoint = true;
 	} else {
 	var pcolor = $('input[name=pcolor]').val();
+	var cByPoint = false;
 	};
     if ($('input[name=xaxis]').val() == "") {
 	var xtitle = 'X'
@@ -41,11 +43,12 @@ $(function () {
        } else {
 	var showLabels = false;
        };
-    Highcharts.chart('container', {
+    var chart = new Highcharts.chart({
      chart: {
+	 renderTo: 'container',
          type: 'scatter',
-	 zoomType: 'xyz',
-	options3d:{
+	 //zoomType: 'xyz',
+	 options3d:{
 	  enabled: true,
 	  alpha: 10,
 	  beta: 30,
@@ -83,8 +86,8 @@ $(function () {
 		format: '{point.name}'
 	    },
 	     marker: {
-		fillColor: pcolor,
 		radius: 3,
+		fillColor: pcolor,
 		symbol: 'circle'
 	     },
 	     cursor: 'pointer',
@@ -108,14 +111,48 @@ $(function () {
     credits: {
 	    enabled: false
     },
+    series: [{
+	colorByPoint: cByPoint,
+    }],
     tooltip: {
          formatter: function () {
             return this.point.name + '<br/>' +
-            xtitle + ': ' + Highcharts.numberFormat(this.x,2) + '<br>' +
-            ytitle + ': ' + Highcharts.numberFormat(this.y,2) + '<br>' +
-	    ztitle + ': ' + Highcharts.numberFormat(this.z,2);
+            xtitle + ': ' + Highcharts.numberFormat(this.point.x,2) + '<br>' +
+            ytitle + ': ' + Highcharts.numberFormat(this.point.y,2) + '<br>' +
+	    ztitle + ': ' + Highcharts.numberFormat(this.point.z,2);
          }
     }
     });
+
+  // Add mouse events for rotation
+  $(chart.container).on('mousedown.hc touchstart.hc', function(eStart) {
+    eStart = chart.pointer.normalize(eStart);
+
+    var posX = eStart.pageX,
+      posY = eStart.pageY,
+      alpha = chart.options.chart.options3d.alpha,
+      beta = chart.options.chart.options3d.beta,
+      newAlpha,
+      newBeta,
+      sensitivity = 5; // lower is more sensitive
+
+    $(document).on({
+      'mousemove.hc touchdrag.hc': function(e) {
+        // Run beta
+        newBeta = beta + (posX - e.pageX) / sensitivity;
+        chart.options.chart.options3d.beta = newBeta;
+
+        // Run alpha
+        newAlpha = alpha + (e.pageY - posY) / sensitivity;
+        chart.options.chart.options3d.alpha = newAlpha;
+
+        chart.redraw(false);
+      },
+      'mouseup touchend': function() {
+        $(document).off('.hc');
+      }
+    });
   });
+
+ });
 });

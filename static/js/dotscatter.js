@@ -22,9 +22,11 @@ $(function () {
 	var showLabels = false;
        };
     if ($('input[name=pcolor]').val() == "") {
-	var pcolor = '#333'
+	var pcolor = '';
+	var cByPoint = true;
 	} else {
 	var pcolor = $('input[name=pcolor]').val();
+	var cByPoint = false;
 	};
 
     Highcharts.chart('container', {
@@ -54,6 +56,7 @@ $(function () {
 	    },
 	     marker:{
 		symbol: 'circle',
+		radius: 3,
 		fillColor: pcolor
 	     },
 	     turboThreshold: 0
@@ -68,6 +71,9 @@ $(function () {
     credits: {
 	    enabled: false
     },
+    series: [{
+	colorByPoint: cByPoint,
+    }],
     tooltip: {
 	 borderColor: pcolor,
          formatter: function () {

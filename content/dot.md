@@ -35,7 +35,7 @@ $(document).ready(main);
 <p>1. Set details for your chart (all optional):<br>
 <input type="text" name="mtitle">&nbsp;&nbsp;<strong>Chart Title</strong> (default: "Dot Plot"):<br> 
 <input type="text" name="yaxis">&nbsp;&nbsp;<strong>Name of y-axis</strong> (default: "Value")<br> 
-<input type="text" name="pcolor">&nbsp;&nbsp;<strong>Point color</strong> (default: "#333")<br> 
+<input type="text" name="pcolor">&nbsp;&nbsp;<strong>Point color</strong> (default: color by point)<br> 
 <strong>Show data labels?</strong> (y values) <input type="checkbox" id="select-datalebels" style="height: 1.2em;">
 </p>
 <p>2. Please paste your data (with header) below:<br>

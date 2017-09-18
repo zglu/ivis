@@ -60,9 +60,9 @@ $(function () {
     tooltip: {
          formatter: function () {
             return this.point.name + '<br/>' +
-            'PC1: ' + Highcharts.numberFormat(this.x,2) + '<br>' +
-            'PC2: ' + Highcharts.numberFormat(this.y,2) + '<br>' +
-            'PC3: ' + Highcharts.numberFormat(this.z,2);
+            'PC1: ' + Highcharts.numberFormat(this.point.x,2) + '<br>' +
+            'PC2: ' + Highcharts.numberFormat(this.point.y,2) + '<br>' +
+            'PC3: ' + Highcharts.numberFormat(this.point.z,2);
          }
     }
     });

@@ -19,9 +19,9 @@ title = "Examples"
 <div id="correlation" style="width: 85%; margin: 0 auto"></div>
 <script src="/js/examples/xycor.js"></script>
 
-<h2>3D Scatter (under development)</h2>
-<div id="3dpca" style="width: 85%; margin: 0 auto"></div>
-<script src="/js/examples/3dpca.js"></script>
+<h2>3D Scatter</h2>
+<div id="container" style="width: 85%; margin: 0 auto"></div>
+<script src="/js/examples/3dpca-rotate.js"></script>
 
 <h2>Line Chart</h2>
 
