@@ -9,6 +9,7 @@
 
 - <strong>Dot / Scatter</strong> plot: X as names and Y holding one or more values
 - <strong>2D Scatter (XY Plot)</strong> using X-Y paird values, such as volcano plot, MA plot, 2D PCA, correlation chart, standard curve and so on
+- <strong>[3D Scatter](/3dscatter)</strong> plot XYZ data
 - <strong>Bar / Column</strong> chart: can use grouped data
 - <strong>Line</strong> chart: multiple series can be plotted
 - <strong>Pie</strong> chart: in 2D or 3D

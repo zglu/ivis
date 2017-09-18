@@ -16,6 +16,7 @@ You can generate various types of intreactive charts using IVIS with your own da
 
 - <strong>[Dot / Scatter](/dot)</strong> plot: X as names and Y holding one or more values
 - <strong>[2D Scatter (XY Plot)](/2dscatter)</strong> using X-Y paird values, such as volcano plot, MA plot, 2D PCA, correlation chart, and standard curve
+- <strong>[3D Scatter](/3dscatter)</strong> plot XYZ data
 - <strong>[Bar / Column](/bar)</strong> chart: single or grouped data
 - <strong>[Line](/line)</strong> chart: multiple series can be plotted
 - <strong>[Pie](/pie)</strong> chart: in 2D or 3D
