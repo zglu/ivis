@@ -14,7 +14,7 @@ title = "Examples"
 
 <h2>2D Scatter</h2>
 <div id="volcano" style="width: 85%; margin: 0 auto"></div>
-<script src="/js/volcano.js"></script>
+<script src="/js/examples/volcano.js"></script>
 
 <div id="correlation" style="width: 85%; margin: 0 auto"></div>
 <script src="/js/examples/xycor.js"></script>
