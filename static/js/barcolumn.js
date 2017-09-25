@@ -22,6 +22,11 @@ $(function () {
 	var rcSwitch = false;
        };
    	var ctype = $('#bar-col').val();
+    if ($("#stackcol").is(":checked")) {
+	var colStack = 'normal';
+       } else {
+	var colStack = false;
+       };
     Highcharts.chart('container', {
      chart: {
          type: ctype,
@@ -50,6 +55,14 @@ $(function () {
     },
     credits: {
 	    enabled: false
+    },
+    plotOptions: {
+	 column: {
+	     stacking: colStack
+	 },
+	bar: {
+	    stacking: colStack
+	}
     },
     tooltip: {
          formatter: function () {

@@ -34,7 +34,7 @@ $(document).ready(main);
 <p>1. Set details for your chart (all optional):<br>
 <input type="text" name="mtitle">&nbsp;&nbsp;<strong>Chart Title</strong> (default: "Bar/Column Chart"):<br> 
 <input type="text" name="yaxis">&nbsp;&nbsp;<strong>Name of y-axis</strong> (default: "Value")<br> 
-<strong>Switch Rows and Columns?</strong> <input type="checkbox" id="switchrc" style="height: 1.2em;">
+<strong>Switch Rows and Columns?</strong> <input type="checkbox" id="switchrc" style="height: 1.2em;">&nbsp;&nbsp;<strong>Stacked?</strong> <input type="checkbox" id="stackcol" style="height: 1.2em;">
 </p>
 <p>2. Please paste your data (with header) below:<br>
 <textarea rows="10" cols="60" name="usrcsv"></textarea>
