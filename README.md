@@ -67,6 +67,5 @@ hugo server
 
 ## License
 
-IVIS is released under the CC-BY-NC 4.0 license.
-
+IVIS is released under the CC-BY-NC 4.0 license and MIT License.
 
