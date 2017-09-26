@@ -59,7 +59,7 @@ hugo server
 - [Hugo](https://gohugo.io)
 - [Hugo NewsPrint theme](https://themes.gohugo.io/newsprint/)
 
-## Plans
+## ToDos
 
 - conditional color for scatters
 - pie chart drilldown
