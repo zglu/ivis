@@ -61,7 +61,7 @@ hugo server
 
 ## Plans
 
-- add 3D scatter chart (DONE)
+- conditional color for scatters
 - pie chart drilldown
 - export for html slides
 
