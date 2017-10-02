@@ -58,7 +58,9 @@ For volcano or MA plot: if you wish to add lines on the X and Y axis, specify th
 </p>
 </form>
 <button id="makeChart">Make Chart</button>
+<button id="exportHtml">Export HTML</button>
 <br>
 <div id="container" style="width: 90%; margin: 0 auto"></div>
 <script src="/js/2dscatter.js"></script>
+<script src='/js/export/exportXY.js'></script>
 </div>

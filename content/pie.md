@@ -42,7 +42,9 @@ $(document).ready(main);
 <p>
 </form>
 <button id="makeChart">Make Chart</button>
+<button id="exportHtml">Export HTML</button>
 <br>
 <div id="container" style="width: 90%; margin: 0 auto"></div>
 <script src="/js/pie.js"></script>
+<script src='/js/export/exportPie.js'></script>
 </div>

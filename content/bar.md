@@ -45,8 +45,10 @@ $(document).ready(main);
     <option value="column" selected="selected">Column</option>
 </select></p>
 </form>
-<p><button id="makeChart">Make Chart</button></p>
+<p><button id="makeChart">Make Chart</button>
+<button id="exportHtml">Export HTML</button></p>
 <br>
 <div id="container" style="width: 90%; margin: 0 auto"></div>
 <script src="/js/barcolumn.js"></script>
+<script src='/js/export/exportBar.js'></script>
 </div>

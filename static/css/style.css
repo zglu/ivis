@@ -369,3 +369,14 @@ nav ul li {
     color: #000080;
     font-family: Poppins, Arial, serif;
 }
+
+button {
+  border: 2px solid blue;
+  background-color: #fff;
+}
+
+button:hover {
+  background-color: #eee;
+  cursor: pointer;
+  color: red;
+}

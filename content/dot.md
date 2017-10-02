@@ -42,7 +42,9 @@ $(document).ready(main);
 <textarea rows="10" cols="60" name="usrcsv"></textarea><br>
 </p></form>
 <button id="makeChart">Make Chart</button>
+<button id="exportHtml">Export HTML</button>
 <br>
 <div id="container" style="width: 90%; margin: 0 auto"></div>
 <script src="/js/dotscatter.js"></script>
+<script src='/js/export/exportDot.js'></script>
 </div>

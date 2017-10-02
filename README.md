@@ -63,7 +63,6 @@ hugo server
 
 - conditional color for scatters
 - pie chart drilldown
-- export for html slides
 
 ## License
 
