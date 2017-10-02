@@ -78,8 +78,8 @@ $(document).ready(main);
 <p>1. Set details for your chart (all optional):<br>
 <input type="text" name="mtitle">&nbsp;&nbsp;<strong>Chart Title</strong> (default: "Heatmap"):<br>
 <input type="text" name="yaxis">&nbsp;&nbsp;<strong>Name of y-axis</strong> (default: "")<br>
-<input type="text" name="mincolor">&nbsp;&nbsp;<strong>Color for min value</strong> (should use <strong>Hex</strong> color code; default: "#ffff")<br> 
-<input type="text" name="maxcolor">&nbsp;&nbsp;<strong>Color for max value</strong> (should use <strong>Hex</strong> color code; default: "#0000")<br> 
+<input type="text" name="mincolor">&nbsp;&nbsp;<strong>Color for min value</strong> (should use <strong>Hex</strong> color code; default: "#fff")<br> 
+<input type="text" name="maxcolor">&nbsp;&nbsp;<strong>Color for max value</strong> (should use <strong>Hex</strong> color code; default: "#000")<br> 
 <strong>Show data labels?</strong> (point value) <input type="checkbox" id="select-datalebels" style="height: 1.2em;">
 </p>
 <p>2. Please paste your data below:<br>
@@ -87,7 +87,9 @@ $(document).ready(main);
 </p>
 </form>
 <button id="makeChart">Make Chart</button>
+<button id="exportHtml">Export HTML</button>
 <br>
 <div id="container" style="width: 90%; margin: 0 auto"></div>
 <script src="/js/heatmap.js"></script>
+<script src='/js/export/exportHeatmap.js'></script>
 </div>

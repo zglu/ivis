@@ -51,6 +51,10 @@ http://www.ensembl.org/Multi/Search/Results?q=
 https://www.ncbi.nlm.nih.gov/cdd/?term=
 ~~~~~~ 
 
+## Export to HTML
+
+You can export the chart data in HTML for interactive presentation.
+
 ## Credits
 
 - [Highcharts](https://highcharts.com)
