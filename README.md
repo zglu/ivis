@@ -51,6 +51,9 @@ brew install hugo
 hugo server
 ~~~~~~
 
+## Export HTML code
+
+Users can now export the html code of their chart and integrate it into HTML slides. Currently available HTML frameworks include reveal.js, remark.js, deck.js, etc. A easy-to-use integration tool is [IPRES](https://ipres.xyz). 
 
 ## Credits
 
