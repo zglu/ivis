@@ -31,12 +31,17 @@ $("#exportHtml").click(function() {
        } else {
 	var rcSwitch = false;
        };
+    if ($("#selSpline").is(":checked")) {
+	var lineType = 'spline';
+       } else {
+	var lineType = 'line';
+       };
     if ($('input[name=preurl]').val() == "") {
 	var preurl = 'https://scholar.google.com/scholar?hl=en&q='
 	} else {
 	var preurl = $('input[name=preurl]').val();
 	};
-	var newCode = '<pre id="'+ preid + '" style="display:none;">\n' + usrcsv + '\n' + '</pre>\n' + '<div id="' + divid + '"></div>\n' + '<script>\n' +'$(function(){var t=$("#'+ preid + '").html().replace(/[ \t]+/g,",");Highcharts.chart("' + divid + '",{chart:{type:"spline",zoomType:"xy",style:{fontFamily:"Arial"}},xAxis:{title:{text:"' + xtitle + '"}},yAxis:{title:{text:"' + ytitle + '"},labels:{format:"{value}"}},data:{csv:t,switchRowsAndColumns:' + rcSwitch + '},plotOptions:{spline:{dataLabels:{enabled:' + showLabels + ',format:"{point.y:.2f}"},cursor:"pointer",point:{events:{click:function(){var l="' + preurl + '"+this.series.name;window.open(l)}}}}},title:{text:"' + mtitle + '"},legend:{enabled:!0},credits:{enabled:!1},tooltip:{formatter:function(){return this.series.name+"<br/>' + ytitle + ': "+Highcharts.numberFormat(this.y,2)}}})});' + '</script>';
+	var newCode = '<pre id="'+ preid + '" style="display:none;">\n' + usrcsv + '\n' + '</pre>\n' + '<div id="' + divid + '"></div>\n' + '<script>\n' +'$(function(){var t=$("#'+ preid + '").html().replace(/[ \t]+/g,",");Highcharts.chart("' + divid + '",{chart:{type:"' + lineType + '",zoomType:"xy",style:{fontFamily:"Arial"}},xAxis:{title:{text:"' + xtitle + '"}},yAxis:{title:{text:"' + ytitle + '"},labels:{format:"{value}"}},data:{csv:t,switchRowsAndColumns:' + rcSwitch + '},plotOptions:{spline:{dataLabels:{enabled:' + showLabels + ',format:"{point.y:.2f}"},cursor:"pointer",point:{events:{click:function(){var l="' + preurl + '"+this.series.name;window.open(l)}}}}},title:{text:"' + mtitle + '"},legend:{enabled:!0},credits:{enabled:!1},tooltip:{formatter:function(){return this.series.name+"<br/>' + ytitle + ': "+Highcharts.numberFormat(this.y,2)}}})});' + '</script>';
 	alert(newCode);
   };
 });

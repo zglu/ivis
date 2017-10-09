@@ -31,6 +31,11 @@ $(function () {
        } else {
 	var rcSwitch = false;
        };
+    if ($("#selSpline").is(":checked")) {
+	var lineType = 'spline';
+       } else {
+	var lineType = 'line';
+       };
     if ($('input[name=preurl]').val() == "") {
 	var preurl = 'https://scholar.google.com/scholar?hl=en&q='
 	} else {
@@ -38,7 +43,7 @@ $(function () {
 	};
     Highcharts.chart('container', {
      chart: {
-         type: 'spline',
+         type: lineType,
          zoomType: 'xy',
 	     style: {
 	        fontFamily: 'Arial'

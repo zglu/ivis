@@ -2,7 +2,7 @@
 title = "Interactive Heatmap"
 +++
 <div>
-<script src="https://code.highcharts.com/modules/heatmap.js"></script>
+<script src="/js/hc-heatmap.js"></script>
 <p> The input for making a heatmap is a three-value array for each data point (x coordinat, y coordinate, value), separated by <strong>single</strong> comma, tab, or space.</p>
 <span class="csv-toggle"><em><mark>+</mark> Sample data for heatmap</em></span>
 <span class="csv-example" style="width: 100%">

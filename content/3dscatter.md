@@ -2,7 +2,7 @@
 title = "Interactive 3D Scatter Chart"
 +++
 <div>
-<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="/js/highcharts-3d.js"></script>
 
 <p>The input data should have four columns (Name, X, Y, Z) separated by <strong>single</strong> comma, tab, or space.</p>
 

@@ -32,7 +32,7 @@ $(document).ready(main);
 <input type="text" name="xaxis">&nbsp;&nbsp;<strong>Name of x-axis</strong> (default: "")<br>
 <input type="text" name="yaxis">&nbsp;&nbsp;<strong>Name of y-axis</strong> (default: "Value")<br> 
 <input type="text" name="preurl"placeholder="e.g., https://google.com/" >&nbsp;&nbsp;<strong>Point link prefix</strong> (default to <a href="https://scholar.google.com">Google Scholar</a>)<br>
-<strong>Show data labels?</strong> (y values) <input type="checkbox" id="select-datalebels" style="height: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Switch Rows and Columns?</strong> <input type="checkbox" id="switchrc" style="height: 1.2em;">
+<strong>Show data labels?</strong> (y values) <input type="checkbox" id="select-datalebels" style="height: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Switch Rows and Columns?</strong> <input type="checkbox" id="switchrc" style="height: 1.2em;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>Spline?</strong> <input type="checkbox" id="selSpline" style="height: 1.2em;">
 </p>
 <p>2. Please paste your data (with header) below:<br>
 <textarea rows="10" cols="60" name="usrcsv"></textarea><br>
