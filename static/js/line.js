@@ -68,10 +68,6 @@ $(function () {
        },
        plotOptions: {
 	 spline: {
-	    dataLabels: {
-		enabled: showLabels,
-		format: '{point.y:.2f}'
-	    },
 	     cursor: 'pointer',
 	     point: {
 	        events: {
@@ -81,7 +77,13 @@ $(function () {
 	            }
 	        }
 	     },
-	 }
+	 },
+	series: {
+	  dataLabels: {
+	    enabled: showLabels,
+	    format: '{point.y:.2f}'
+	  }
+	}
        },
     title: {
          text: mtitle

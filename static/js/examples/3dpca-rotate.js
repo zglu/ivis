@@ -51,17 +51,19 @@ $(function () {
     },
     plotOptions: {
 	scatter: {
-	   dataLabels: {
-		enabled: true,
-		format: '{point.name}'
-	    },
 	     marker: {
 		radius: 3,
 		symbol: 'circle',
 	     },
 	     cursor: 'pointer',
 	     turboThreshold: 0
-	 }
+	 },
+	series:{
+	   dataLabels: {
+		enabled: true,
+		format: '{point.name}'
+	    }
+	}
     },
     title: {
          text: '3D Princinple Component Analysis'
