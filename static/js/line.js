@@ -67,6 +67,17 @@ $(function () {
 	 switchRowsAndColumns: rcSwitch
        },
        plotOptions: {
+	 line: {
+	     cursor: 'pointer',
+	     point: {
+	        events: {
+	            click: function () {
+			var goURL = preurl + this.series.name;
+	                window.open(goURL);
+	            }
+	        }
+	     },
+	 },
 	 spline: {
 	     cursor: 'pointer',
 	     point: {
