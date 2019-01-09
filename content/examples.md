@@ -2,8 +2,8 @@
 title = "Examples"
 +++
 <div>
-<script src="https://code.highcharts.com/highcharts-3d.js"></script>
-<script src="https://code.highcharts.com/modules/heatmap.js"></script>
+<script src="/js/highcharts-3d.js"></script>
+<script src="/js/heatmap.js"></script>
 
 <h2>Dot / Scatter Chart</h2>
 <center><div id="chart8" style="width: 85%;"></div></center>
