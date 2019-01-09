@@ -3,7 +3,7 @@ title = "Examples"
 +++
 <div>
 <script src="/js/highcharts-3d.js"></script>
-<script src="/js/heatmap.js"></script>
+<script src="/js/hc-heatmap.js"></script>
 
 <h2>Dot / Scatter Chart</h2>
 <center><div id="chart8" style="width: 85%;"></div></center>
